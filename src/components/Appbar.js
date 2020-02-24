@@ -6,7 +6,7 @@ class Appbar extends React.Component{
     return(
       <View style={styles.appbar}>
       <View>
-      <Text style={styles.appbarTitle}>LINE</Text>
+      <Text style={styles.appbarTitle}>Memotto</Text>
       </View>
       </View>
     );
