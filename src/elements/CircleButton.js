@@ -36,7 +36,7 @@ if(color === 'white') {
       <View style={[styles.circleButton, style, {backgroundColor: bgColor}]}>
           {
             this.state.fontLoaded ? (
-              <CustomIcon name={name} style={[style.circleButtonTitile,{color: textColor}]} />
+              <CustomIcon name={name} style={[styles.circleButtonTitle,{color: textColor}]} />
           ) : null
         }
       </View>
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     shadowRadius: 3,
   },
 
-  circleButtontitile: {
+  circleButtonTitle: {
     fontFamily: 'FontAwsome',
     fontSize: 32,
     lineHeight: 32,

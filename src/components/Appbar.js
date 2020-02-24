@@ -6,7 +6,7 @@ class Appbar extends React.Component{
     return(
       <View style={styles.appbar}>
       <View>
-      <Text style={styles.appbarTitle}>名前変更したんですが</Text>
+      <Text style={styles.appbarTitle}>Memott</Text>
       </View>
       </View>
     );
