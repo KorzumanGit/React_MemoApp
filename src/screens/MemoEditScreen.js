@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text, TextInput } from 'react-native';
+import { StyleSheet, View, TextInput } from 'react-native';
 
 import CircleButton from '../elements/CircleButton';
 
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   MemoEditInput: {
-    backgroundColor: '#ddd',
+    backgroundColor: '#fff',
     flex: 1,
     paddingTop: 32,
     paddingLeft: 16,
