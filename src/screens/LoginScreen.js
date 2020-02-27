@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, TextInput, Button, Text, TouchableHighlight } from 'react-native';
+import { StyleSheet, View, TextInput, Text, TouchableHighlight } from 'react-native';
 
 class LoginScreen extends React.Component {
     render() {
@@ -9,7 +9,7 @@ class LoginScreen extends React.Component {
                     ログイン
                 </Text>
                 <TextInput style={styles.input} value="Mailadress" />
-                <TextInput style={styles.input} value="Password" />
+                <TextInput stylae={styles.input} value="Password" />
                 <TouchableHighlight style={styles.button} onPress={() => { }} underlayColor="#C70F66">
                     <Text style={styles.buttonTitle}>ログインする</Text>
                 </TouchableHighlight>

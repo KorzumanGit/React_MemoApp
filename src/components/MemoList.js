@@ -1,35 +1,35 @@
 import React from 'react';
-import { StyleSheet, Text , View} from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 class MemoList extends React.Component {
   render() {
-    return(
+    return (
       <View style={styles.memoList}>
 
-      <View style={styles.memoListItem}>
-      <Text style={styles.memoTitle}>講座のアイテム</Text>
-      <Text style={styles.memoDate}>2018/01/01</Text>
-      </View>
+        <View style={styles.memoListItem}>
+          <Text style={styles.memoTitle}>講座のアイテム</Text>
+          <Text style={styles.memoDate}>2018/01/01</Text>
+        </View>
 
-      <View style={styles.memoListItem}>
-      <Text style={styles.memoTitle}>講座のアイテム</Text>
-      <Text style={styles.memoDate}>2018/01/01</Text>
-      </View>
+        <View style={styles.memoListItem}>
+          <Text style={styles.memoTitle}>講座のアイテム</Text>
+          <Text style={styles.memoDate}>2018/01/01</Text>
+        </View>
 
-      <View style={styles.memoListItem}>
-      <Text style={styles.memoTitle}>講座のアイテム</Text>
-      <Text style={styles.memoDate}>2018/01/01</Text>
-      </View>
+        <View style={styles.memoListItem}>
+          <Text style={styles.memoTitle}>講座のアイテム</Text>
+          <Text style={styles.memoDate}>2018/01/01</Text>
+        </View>
 
-      <View style={styles.memoListItem}>
-      <Text style={styles.memoTitle}>講座のアイテム</Text>
-      <Text style={styles.memoDate}>2018/01/01</Text>
-      </View>
+        <View style={styles.memoListItem}>
+          <Text style={styles.memoTitle}>講座のアイテム</Text>
+          <Text style={styles.memoDate}>2018/01/01</Text>
+        </View>
 
-      <View style={styles.memoListItem}>
-      <Text style={styles.memoTitle}>講座のアイテム</Text>
-      <Text style={styles.memoDate}>2018/01/01</Text>
-      </View>
+        <View style={styles.memoListItem}>
+          <Text style={styles.memoTitle}>講座のアイテム</Text>
+          <Text style={styles.memoDate}>2018/01/01</Text>
+        </View>
       </View>
     );
   }
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
-  memoListItem :{
+  memoListItem: {
     padding: 16,
     borderBottomWidth: 1,
     borderBottomColor: '#ddd',
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
 
   },
 
-  memoTitle : {
+  memoTitle: {
     fontSize: 18,
     marginBottom: 4,
   },
