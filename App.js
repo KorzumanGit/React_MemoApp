@@ -1,3 +1,4 @@
+// 元のコード
 // import React from 'react';
 // import { StyleSheet, View } from 'react-native';
 
@@ -5,11 +6,15 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
-import Appbar from './src/components/Appbar';
-import SignupScreen from './src/screens/SignupScreen';
+// 元のコード
+// import Appbar from './src/components/Appbar';
+// import SignupScreen from './src/screens/SignupScreen';
+
+// 追加分
 import MemoListScreen from './src/screens/MemoListScreen';
 
 
+// 元のコード
 // export default class App extends React.Component {
 //   render() {
 //     return (
@@ -29,7 +34,7 @@ createStackNavigator({
 
 
 
-
+// 元のコード
 // const styles = StyleSheet.create({
 //   container: {
 //     flex: 1,
