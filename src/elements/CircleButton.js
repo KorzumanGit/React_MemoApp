@@ -22,26 +22,26 @@ class CircleButton extends React.Component {
   }
 
   render() {
-    const { name , style, color }= this.props;
+    const { name, style, color, onPress } = this.props;
 
-let bgColor='#E31676';
-let textColor='#fff';
+    let bgColor = '#E31676';
+    let textColor = '#fff';
 
-if(color === 'white') {
-  bgColor = '#fff';
-  textColor = '#E31767';
-}
+    if (color === 'white') {
+      bgColor = '#fff';
+      textColor = '#E31767';
+    }
 
-    return(
-      <View style={[styles.circleButton, style, {backgroundColor: bgColor}]}>
-          {
-            this.state.fontLoaded ? (
-              <CustomIcon name={name} style={[styles.circleButtonTitle,{color: textColor}]} />
+    return (
+      <View style={[styles.circleButton, style, { backgroundColor: bgColor }]}>
+        {
+          this.state.fontLoaded ? (
+            <CustomIcon name={name} style={[styles.circleButtonTitle, { color: textColor }]} onPress={onPress} />
           ) : null
         }
       </View>
-              );
-            }
+    );
+  }
 }
 
 const styles = StyleSheet.create({
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2},
+    shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.9,
     shadowRadius: 3,
   },
