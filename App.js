@@ -7,6 +7,7 @@ import MemoEditScreen from './src/screens/MemoEditScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import SignupScreen from './src/screens/SignupScreen';
 import firebase from 'firebase';
+import ENV from './env.json';
 
 
 
@@ -29,13 +30,13 @@ import firebase from 'firebase';
 
 // firebaseの読み込み
 const config = {
-  apiKey: 'AIzaSyCwD4h0ejxW8u_zJcyS2HLP1AWSa4V-HzU',
-  authDomain: 'memoapp-f4baa.firebaseapp.com',
-  databaseURL: 'https://memoapp-f4baa.firebaseio.com',
-  projectId: 'memoapp-f4baa',
-  storageBucket: 'memoapp-f4baa.appspot.com',
-  messagingSenderId: '156509281855',
-  appId: '1:156509281855:web:efed1c89df20f378dfa28a',
+  apiKey: ENV.FIREBASE_API_KEY,
+  authDomain: ENV.FIREBASE_AUTH_DOMEIN,
+  databaseURL: ENV.FIREBASE_DB_URL,
+  projectId: ENV.FIREBASE_PROJECT_ID,
+  storageBucket: ENV.FIREBASE_STORAGEBUCKET,
+  messagingSenderId: ENV.FIREBASE_MESSAGING_SENDER_ID,
+  appId: ENV.FIREBASE_APPID,
 };
 firebase.initializeApp(config);
 
