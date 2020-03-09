@@ -6,6 +6,7 @@ import MemoDetailScreen from './src/screens/MemoDetailScreen';
 import MemoEditScreen from './src/screens/MemoEditScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import SignupScreen from './src/screens/SignupScreen';
+import firebase from 'firebase';
 
 
 
@@ -26,10 +27,20 @@ import SignupScreen from './src/screens/SignupScreen';
 //   }
 // }
 
+// firebaseの読み込み
+const config = {
+  apiKey: 'AIzaSyCwD4h0ejxW8u_zJcyS2HLP1AWSa4V-HzU',
+  authDomain: 'memoapp-f4baa.firebaseapp.com',
+  databaseURL: 'https://memoapp-f4baa.firebaseio.com',
+  projectId: 'memoapp-f4baa',
+  storageBucket: 'memoapp-f4baa.appspot.com',
+  messagingSenderId: '156509281855',
+  appId: '1:156509281855:web:efed1c89df20f378dfa28a',
+};
+firebase.initializeApp(config);
 
 // 追加分
 // 解説：レクチャー70のQAにあるよ
-
 const AppContainer = createStackNavigator(
   {
     Login: { screen: LoginScreen },
