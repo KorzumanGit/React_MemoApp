@@ -8,6 +8,7 @@ import LoginScreen from './src/screens/LoginScreen';
 import SignupScreen from './src/screens/SignupScreen';
 import firebase from 'firebase';
 import ENV from './env.json';
+require("firebase/firestore");
 
 
 
