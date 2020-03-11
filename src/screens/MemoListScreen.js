@@ -4,6 +4,7 @@ import { StyleSheet, View } from 'react-native';
 import MemoList from '../components/MemoList';
 import CircleButton from '../elements/CircleButton';
 import firebase from 'firebase';
+import { Octicons } from '@expo/vector-icons';
 
 class MemoListScreen extends React.Component {
   state = {
@@ -19,6 +20,7 @@ class MemoListScreen extends React.Component {
         snapshot.forEach((doc) => {
           memoList.push(doc.data());
         });
+        memoList.push({ ...doc.data(), key: doc.id });
         // 正規の書き方
         // this.setState({ memoList: memoList });
         // 省略形の書き方
