@@ -4,8 +4,8 @@ import firebase from 'firebase';
 
 class LoginScreen extends React.Component {
     state = {
-        email: '',
-        Password: '',
+        email: 'bbdai3710@gmail.com',
+        password: '010101',
     }
 
     // eslint-disable-next-line
@@ -14,7 +14,7 @@ class LoginScreen extends React.Component {
             .then((user) => {
                 console.log('success!');
                 console.log(user);
-                this.props.navigation.navigate('Home', { currentUser: user });
+                this.props.navigation.navigate('Home');
             })
             .catch((error) => {
                 console.log(error);
