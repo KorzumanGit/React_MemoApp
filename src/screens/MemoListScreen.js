@@ -4,7 +4,6 @@ import { StyleSheet, View } from 'react-native';
 import MemoList from '../components/MemoList';
 import CircleButton from '../elements/CircleButton';
 import firebase from 'firebase';
-import { Octicons } from '@expo/vector-icons';
 
 class MemoListScreen extends React.Component {
   state = {
