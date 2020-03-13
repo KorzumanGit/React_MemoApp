@@ -4,8 +4,9 @@ import { StyleSheet, View, Text } from 'react-native';
 import CircleButton from '../elements/CircleButton';
 
 const dateString = (date) => {
-  const str = date.toDate().toISOString();
-  return str.split('T')[0];
+  if (date == null) { return ''; }
+  const dateObject = date.toDate();
+  return dateObject.toISOString().split('T')[0];
 };
 
 class MemoDetailScreen extends React.Component {
@@ -45,7 +46,7 @@ class MemoDetailScreen extends React.Component {
           name="pencil"
           color='white'
           style={styles.editButton}
-          onPress={() => { this.props.navigation.navigate('MemoEdit', { ...memo, returnMemo: this.returnMemo.bind(this) }); }} />
+          onPress={() => { this.props.navigation.navigate('MemoEdit', { memo, returnMemo: this.returnMemo.bind(this) }); }} />
       </View>
     );
   }
